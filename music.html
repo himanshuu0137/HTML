@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Beats - Your Ultimate Music Blog</title>
+    <link rel="stylesheet" href="music.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTX4U+6bHc5Pq+RlXKpqKON4rMd6oY1QZYpPtBF1znFv/Dlh9daS5T19XkS1imHbcXx3r1bTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Melody Beats</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Interviews</a></li>
+                <li><a href="#">Playlists</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h2>Your Ultimate Music Destination</h2>
+            <p>Latest news, reviews, and exclusive interviews with your favorite artists.</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Latest Posts Section -->
+        <section class="latest-posts">
+            <h2>Latest Posts</h2>
+            <div class="posts-container">
+                <!-- Post 1 -->
+                <div class="post">
+                    <img src="assets/images/post1.jpg" alt="Post Image">
+                    <div class="post-content">
+                        <h3><a href="#">Top 10 Indie Bands to Watch in 2024</a></h3>
+                        <p>Discover the most promising indie bands that are set to take the music scene by storm this year.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="post">
+                    <img src="assets/images/post2.jpg" alt="Post Image">
+                    <div class="post-content">
+                        <h3><a href="#">Exclusive Interview with [Artist Name]</a></h3>
+                        <p>We sat down with [Artist Name] to discuss their latest album and upcoming tour.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="post">
+                    <img src="assets/images/post3.jpg" alt="Post Image">
+                    <div class="post-content">
+                        <h3><a href="#">Creating the Perfect Playlist for Any Mood</a></h3>
+                        <p>Tips and tricks to curate playlists that match your every mood and occasion.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Artists Section -->
+        <section class="featured-artists">
+            <h2>Featured Artists</h2>
+            <div class="artists-container">
+                <!-- Artist 1 -->
+                <div class="artist">
+                    <img src="assets/images/artist1.jpg" alt="Artist Image">
+                    <h3>[Artist Name]</h3>
+                    <p>Genre: Pop</p>
+                </div>
+                <!-- Artist 2 -->
+                <div class="artist">
+                    <img src="assets/images/artist2.jpg" alt="Artist Image">
+                    <h3>[Artist Name]</h3>
+                    <p>Genre: Rock</p>
+                </div>
+                <!-- Artist 3 -->
+                <div class="artist">
+                    <img src="assets/images/artist3.jpg" alt="Artist Image">
+                    <h3>[Artist Name]</h3>
+                    <p>Genre: Hip-Hop</p>
+                </div>
+                <!-- Add more artists as needed -->
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter and never miss an update!</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Melody Beats</h3>
+                <p>Your go-to source for the latest in music news, reviews, and exclusive artist interviews.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Interviews</a></li>
+                    <li><a href="#">Playlists</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Melody Beats. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4081;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Header Section */
+.header {
+    height: 100vh;
+    background: url('../assets/images/header-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 80px; /* To accommodate fixed navbar */
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.header-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff4081;
+    color: #fff;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e73370;
+}
+
+/* Latest Posts Section */
+.latest-posts {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    margin-top: 80px; /* To account for fixed navbar */
+}
+
+.latest-posts h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+.posts-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+.post img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #ff4081;
+    font-weight: bold;
+}
+
+/* Featured Artists Section */
+.featured-artists {
+    padding: 60px 10%;
+}
+
+.featured-artists h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+.artists-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist {
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.artist:hover {
+    transform: translateY(-10px);
+}
+
+.artist img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 5px solid #ff4081;
+}
+
+.artist h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.artist p {
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#newsletter-form input[type="email"] {
+    padding: 10px 20px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#newsletter-form input[type="email"]:focus {
+    border-color: #ff4081;
+}
+
+#newsletter-form .btn {
+    padding: 10px 30px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter-form .btn:hover {
+    background-color: #e73370;
+}
+
+#form-message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #28a745;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 10%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff4081;
+}
+
+.footer-social a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ff4081;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #e73370;
+}
+
+/* Scroll Animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Toggle Animation for Hamburger */
+.toggle {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .posts-container,
+    .artists-container {
+        justify-content: center;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    .nav-active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .posts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-artists .artists-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h2 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    #newsletter-form input[type="email"] {
+        width: 100%;
+        max-width: 250px;
+    }
+}
